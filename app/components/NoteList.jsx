@@ -3,6 +3,10 @@ import { Link } from "@remix-run/react";
 import styles from "./NoteList.css";
 
 function NoteList({ notes }) {
+  if (!notes) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <ul id="note-list">
       {notes.map((note, index) => (

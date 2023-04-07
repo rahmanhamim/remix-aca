@@ -3,10 +3,13 @@ import React from "react";
 import styles from "../styles/note-details.css";
 import { getStoredNotes } from "../data/notes";
 
+/**
+ * @description notes_.$noteId.jsx for totally new dynamic route
+ * @if want to use same layout have to use <Outlet /> in parent and omit _ before _.$noteId.jsx
+ */
+
 const NoteDetailsPage = () => {
   const note = useLoaderData();
-
-  console.log(note);
 
   return (
     <main id="note-details">
