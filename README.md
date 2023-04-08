@@ -1,5 +1,7 @@
 # Welcome to Remix!
 
+# The files inside a folder have no meaning for the route paths, the route path is completely defined by the folder name
+
 - [Remix Docs](https://remix.run/docs)
 
 ## Development
